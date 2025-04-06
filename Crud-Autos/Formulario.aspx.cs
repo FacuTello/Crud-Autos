@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Dominio;
 
 namespace Crud_Autos
 {
@@ -21,7 +22,24 @@ namespace Crud_Autos
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
+            Auto nuevo = new Auto();
 
+            nuevo.Id = int.Parse(txtId.Text);
+            nuevo.Modelo = txtModelo.Text;
+            nuevo.Descripcion = txtDescripcion.Text;
+            nuevo.Color = ddlColores.SelectedValue;
+            nuevo.Fecha = DateTime.Parse(txtFecha.Text);
+            nuevo.Usado = cbUsado.Checked;
+
+            if (rbImportado.Checked)
+                nuevo.Importado = true;
+            else if (rbNacional.Checked)
+                nuevo.Importado = false;
+
+            List<Auto> temporal = (List<Auto>)Session["listaAutos"];
+            temporal.Add(nuevo);
+
+            Response.Redirect("default.aspx");
         }
     }
 }

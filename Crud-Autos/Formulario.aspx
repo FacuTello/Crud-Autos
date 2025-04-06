@@ -26,7 +26,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="txtFecha" class="form-label">Ingrese la Fecha</label>
-                    <asp:TextBox runat="server" ID="TextFecha" CssClass="form-control" TextMode="Date" />
+                    <asp:TextBox runat="server" ID="txtFecha" CssClass="form-control" TextMode="Date" />
                 </div>
                 <div>
                     <label for="rbImportado" class="form-label">¿Es usado?</label>
@@ -41,7 +41,7 @@
                     <asp:RadioButton ID="rbImportado" CssClass="form-check-input" Text="Importado" Checked="true" GroupName="Importado" runat="server" />
                 </div>
                 <div class="mb-5">
-                    <asp:RadioButton ID="rdNacional" CssClass="form-check-input" Text="Nacional" GroupName="Importado" runat="server" />
+                    <asp:RadioButton ID="rbNacional" CssClass="form-check-input" Text="Nacional" GroupName="Importado" runat="server" />
                 </div>
                 <div class="mb-3">
                     <asp:Button ID="btnAceptar" Text="Aceptar" OnClick="btnAceptar_Click" CssClass="btn btn-success" runat="server" />

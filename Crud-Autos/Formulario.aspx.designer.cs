@@ -51,13 +51,13 @@ namespace Crud_Autos
         protected global::System.Web.UI.WebControls.DropDownList ddlColores;
 
         /// <summary>
-        /// Control TextFecha.
+        /// Control txtFecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextFecha;
+        protected global::System.Web.UI.WebControls.TextBox txtFecha;
 
         /// <summary>
         /// Control cbUsado.
@@ -78,13 +78,13 @@ namespace Crud_Autos
         protected global::System.Web.UI.WebControls.RadioButton rbImportado;
 
         /// <summary>
-        /// Control rdNacional.
+        /// Control rbNacional.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdNacional;
+        protected global::System.Web.UI.WebControls.RadioButton rbNacional;
 
         /// <summary>
         /// Control btnAceptar.
